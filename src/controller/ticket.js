@@ -24,7 +24,6 @@ async function getTicketStatus(req, res) {
     const ticket = await Ticket.findById(ticketId);
     res.json(ticket);
   } catch (error) {
-    console.log(error)
     res.status(500).json({ error: 'Failed to get ticket status' });
   }
 }
@@ -34,7 +33,6 @@ async function getClosedTickets(req, res) {
     const closedTickets = await Ticket.find({ status: 'closed' });
     res.json(closedTickets);
   } catch (error) {
-    console.log(error)
     res.status(500).json({ error: 'Failed to get closed tickets' });
   }
 }
