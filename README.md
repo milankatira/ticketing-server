@@ -32,7 +32,7 @@ This Node.js server handles ticketing for a bus company. It provides APIs to man
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/milankatira/ticketing-server
 ```
 
 2. Install the dependencies:
@@ -54,11 +54,11 @@ npm start
 
 ## API Documentation
 
-Please refer to the [API documentation](api-docs.md) for detailed information on the available endpoints and their usage.
+Please refer to the [API documentation](https://documenter.getpostman.com/view/17187454/2s93sZ7u6F) for detailed information on the available endpoints and their usage.
 
 ## Testing
 
-To test the server endpoints, you can import the provided Postman collection. The collection file is located at [postman-collection.json](postman-collection.json).
+To test the server endpoints, you can import the provided Postman collection. The collection file is located at [postman_collection.json](postman_collection.json).
 
 1. Import the collection into Postman.
 2. Update the necessary environment variables in Postman (e.g., `BASE_URL`).
@@ -66,16 +66,4 @@ To test the server endpoints, you can import the provided Postman collection. Th
 
 ## Version Control
 
-This project is version controlled using Git. You can access the code repository at [GitHub](https://github.com/your-username/bus-ticketing-server).
-
-## Contributing
-
-Contributions to this project are welcome. Feel free to fork the repository and submit pull requests with your improvements.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-Feel free to customize the README file according to your project's specific details and requirements. Include any additional information that you think would be helpful for users who want to set up and use your bus ticketing server.
+This project is version controlled using Git. You can access the code repository at [GitHub](https://github.com/milankatira/ticketing-server).

@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "aa76e391-14e7-42a1-ad85-3db01605c28b",
+		"name": "ticket",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17187454",
+		"_collection_link": "https://milankatira.postman.co/workspace/mk~c79d88c0-b433-44c3-8a11-e51ba3243b77/collection/17187454-aa76e391-14e7-42a1-ad85-3db01605c28b?action=share&creator=17187454&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "get open ticket",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"status\":\"closed\", \"owner\":\"milan katira\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server_url}}/tickets-open",
+					"host": [
+						"{{server_url}}"
+					],
+					"path": [
+						"tickets-open"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get closed ticket",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"status\":\"closed\", \"owner\":\"milan katira\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server_url}}/tickets-closed",
+					"host": [
+						"{{server_url}}"
+					],
+					"path": [
+						"tickets-closed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get ticket details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"status\":\"closed\", \"owner\":\"milan katira\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server_url}}/tickets/64800403256ea2fc80eece39",
+					"host": [
+						"{{server_url}}"
+					],
+					"path": [
+						"tickets",
+						"64800403256ea2fc80eece39"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get ticket owner details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"status\":\"closed\", \"owner\":\"milan katira\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server_url}}/tickets/64800403256ea2fc80eece39/owner",
+					"host": [
+						"{{server_url}}"
+					],
+					"path": [
+						"tickets",
+						"64800403256ea2fc80eece39",
+						"owner"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update ticket",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"status\":\"closed\", \"owner\":\"milan katira\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server_url}}/tickets/64800403256ea2fc80eece39",
+					"host": [
+						"{{server_url}}"
+					],
+					"path": [
+						"tickets",
+						"64800403256ea2fc80eece39"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reset database by id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"status\":\"closed\", \"owner\":\"milan katira\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server_url}}/admin/reset",
+					"host": [
+						"{{server_url}}"
+					],
+					"path": [
+						"admin",
+						"reset"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
