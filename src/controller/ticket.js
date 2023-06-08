@@ -1,5 +1,19 @@
 const Ticket = require('../model/ticket');
 
+async function createTicket(req, res) {
+  const { status, owner } = req.body;
+
+  try {
+    const totalEntries = await Ticket.countDocuments();
+    const seatNumber = totalEntries + 1;
+
+    const ticket = await Ticket.create({ status, owner, seatNumber });
+    res.json(ticket);
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to create ticket' });
+  }
+}
+
 async function updateTicketStatus(req, res) {
   const { ticketId } = req.params;
   const { status, owner } = req.body;
@@ -67,6 +81,7 @@ async function resetServer(req, res) {
 }
 
 module.exports = {
+  createTicket,
   updateTicketStatus,
   getTicketStatus,
   getClosedTickets,

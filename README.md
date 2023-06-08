@@ -52,6 +52,12 @@ Rename the `.env.example` file to `.env` and update the values according to your
 npm start
 ```
 
+5. Initialize 40 ticket
+
+```bash
+npm run seed
+```
+
 ## API Documentation
 
 Please refer to the [API documentation](https://documenter.getpostman.com/view/17187454/2s93sZ7u6F) for detailed information on the available endpoints and their usage.

@@ -1,8 +1,8 @@
 const Joi = require("joi");
 
 const createTicketSchema = Joi.object({
-  seatNumber: Joi.number().required(),
-  user: Joi.string().required(),
+  status: Joi.string().valid("open", "closed"),
+  owner: Joi.string()
 });
 
 const updateTicketStatusSchema = Joi.object({
@@ -27,5 +27,6 @@ const validateUpdateTicketStatus = (req, res, next) => {
 };
 
 module.exports = {
-  validateUpdateTicketStatus
+  validateUpdateTicketStatus,
+  validateCreateTicket
 }

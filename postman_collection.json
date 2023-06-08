@@ -37,6 +37,32 @@
 			"response": []
 		},
 		{
+			"name": "create ticket",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"status\":\"open\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server_url}}/tickets",
+					"host": [
+						"{{server_url}}"
+					],
+					"path": [
+						"tickets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "get closed ticket",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
